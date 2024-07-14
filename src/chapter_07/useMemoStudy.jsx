@@ -18,6 +18,7 @@
    의존성 배열이 빈 배열일 경우, 컴포넌트 마운트 시에만 호출 됨
    const memoizedValue = useMemo(() => computeExpensiveValue(a, b), []);
    => 결국 마운트 이후에는 값이 변경되지 않으므로, 한 번만 호출되고 이후에는 호출되지 않음  
-
    
 */
+
+const memoizedValue = useMemo(() => {return computeExpensiveValue(a, b)});
