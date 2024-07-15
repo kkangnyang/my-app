@@ -1,3 +1,5 @@
+import React from "react";
+
 function Toggle(props) {
     const [isToggleOn, setIsToggleOn] = useState(true);
 
@@ -17,3 +19,5 @@ function Toggle(props) {
         </button>
     )
 }
+
+export default Toggle;
